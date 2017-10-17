@@ -1,4 +1,4 @@
-package skuniv.ac.kr.quickpollapplication.UI;
+package skuniv.ac.kr.quickpollapplication;
 
 /**
  * Created by gunyoungkim on 2017-10-17.

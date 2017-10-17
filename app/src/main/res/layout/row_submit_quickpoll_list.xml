@@ -5,15 +5,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="08/06"
-        android:id="@+id/QuizDay"
-        android:layout_margin="10dp"
-       />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ox"
+            android:id="@+id/QuizType"
+            android:layout_gravity="center"
+            />
 
         <TextView
             android:id="@+id/QuizTitle"
@@ -24,13 +24,16 @@
             android:text="물리계층의 전송단위는?"
             android:layout_weight="1"/>
 
-        <ImageView
+
+        <CheckBox
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ox"
-            android:id="@+id/QuizType"
+            android:id="@+id/SubmitCheck"
+            android:checked="false"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:background="@drawable/selectable_submit_quickpoll_check_backgroud"
+
             />
-
-
     </LinearLayout>
 </LinearLayout>

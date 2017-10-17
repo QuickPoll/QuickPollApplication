@@ -1,4 +1,4 @@
-package skuniv.ac.kr.quickpollapplication.UI;
+package skuniv.ac.kr.quickpollapplication;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,20 +15,18 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
-import skuniv.ac.kr.quickpollapplication.R;
-
 /**
  * Created by gunyoungkim on 2017-09-07.
  */
 
-public class QuickPollTabsAdapter extends FragmentStatePagerAdapter implements TabHost.OnTabChangeListener, ViewPager.OnPageChangeListener{
+public class ProfessorQuickPollTabsAdapter extends FragmentStatePagerAdapter implements TabHost.OnTabChangeListener, ViewPager.OnPageChangeListener{
     private Context context;
     private TabHost tabHost;
     private ViewPager viewPager;
     private View currentTabView;
     private int currentIndex;
 
-    public QuickPollTabsAdapter(Context context, TabHost tabHost, ViewPager viewPager ) {
+    public ProfessorQuickPollTabsAdapter(Context context, TabHost tabHost, ViewPager viewPager ) {
         super( ( (FragmentActivity) context ).getSupportFragmentManager() );
         currentTabView = null;
         currentIndex = -1;
@@ -51,9 +49,10 @@ public class QuickPollTabsAdapter extends FragmentStatePagerAdapter implements T
         this.viewPager.setOnPageChangeListener( this );
 
         // init
-        int count = QuickPollTabsConfig.COUNT_TABS();
+        int count = ProfessorQuickPollTabsConfig.COUNT_TABS();
         for( int i = 0; i < count; i++ ) {
-            QuickPollTabsConfig.TabInfo tabInfo = QuickPollTabsConfig.TABINFO( i );
+            ProfessorQuickPollTabsConfig.TabInfo tabInfo = ProfessorQuickPollTabsConfig.TABINFO( i );
+
 
             View view = LayoutInflater.from( this.context ).inflate( R.layout.tab_background, null );
             TabHost.TabSpec tabSpec = tabHost.newTabSpec( tabInfo.tag ).setIndicator( view );
@@ -89,12 +88,12 @@ public class QuickPollTabsAdapter extends FragmentStatePagerAdapter implements T
 
     @Override
     public int getCount() {
-        return QuickPollTabsConfig.COUNT_TABS();
+        return ProfessorQuickPollTabsConfig.COUNT_TABS();
     }
 
     @Override
     public Fragment getItem(int index ) {
-        QuickPollTabsConfig.TabInfo tabInfo = QuickPollTabsConfig.TABINFO( index );
+        ProfessorQuickPollTabsConfig.TabInfo tabInfo = ProfessorQuickPollTabsConfig.TABINFO( index );
         return Fragment.instantiate( context, tabInfo.klass.getName(), tabInfo.bundle );
     }
 
@@ -107,11 +106,11 @@ public class QuickPollTabsAdapter extends FragmentStatePagerAdapter implements T
 
     @Override
     public void onTabChanged( String tabId ) {
-        QuickPollTabsConfig.TabInfo tabInfo;
+        ProfessorQuickPollTabsConfig.TabInfo tabInfo;
 
         // previous tab
         if( currentTabView != null && currentIndex >= 0 ) {
-            tabInfo = QuickPollTabsConfig.TABINFO( currentIndex );
+            tabInfo = ProfessorQuickPollTabsConfig.TABINFO( currentIndex );
             if( tabInfo.drawableNormal != 0  && tabInfo.drawableSelected != 0 ) {
                 ( ( ImageView ) currentTabView.findViewById( R.id.tab_image ) ).setImageDrawable(  context.getResources().getDrawable( tabInfo.drawableNormal ) );
             }
@@ -120,7 +119,7 @@ public class QuickPollTabsAdapter extends FragmentStatePagerAdapter implements T
         currentIndex = tabHost.getCurrentTab();
         currentTabView = tabHost.getCurrentTabView();
 
-        tabInfo = QuickPollTabsConfig.TABINFO( currentIndex );
+        tabInfo = ProfessorQuickPollTabsConfig.TABINFO( currentIndex );
         if( tabInfo.drawableNormal != 0  && tabInfo.drawableSelected != 0 ) {
             ( ( ImageView ) currentTabView.findViewById( R.id.tab_image ) ).setImageDrawable(  context.getResources().getDrawable( tabInfo.drawableSelected ) );
         }

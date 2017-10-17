@@ -11,6 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/add_quickpoll"
+            android:layout_toRightOf="@+id/credit"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/Subject_Name"
+            android:id="@+id/add_quickpoll"
+            />
+
         <TextView
             android:id="@+id/Subject_Name"
             android:layout_width="wrap_content"
@@ -36,6 +46,7 @@
             android:layout_marginLeft="20dp"
             android:text="3학점"
             android:gravity="center"
+            android:id="@+id/credit"
             android:textColor="@android:color/white"
             android:layout_toRightOf="@+id/Subject_Name"
             android:layout_alignBottom="@+id/Subject_Name"
@@ -43,38 +54,40 @@
             />
     </RelativeLayout>
 
-        <TabHost
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@android:id/tabhost"
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
-            <LinearLayout
-                android:orientation="vertical"
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:background="#61BFAD"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="50dp"
+                android:layout_weight="0" />
 
-                <TabWidget
-                    android:id="@android:id/tabs"
-                    android:background="#61BFAD"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="0" />
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/pager"
+                />
+        </LinearLayout>
 
-                <FrameLayout
-                    android:id="@android:id/tabcontent"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="0" />
-                <android.support.v4.view.ViewPager
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:id="@+id/pager"
-                    />
-            </LinearLayout>
-        </TabHost>
+    </TabHost>
+
 
 </LinearLayout>

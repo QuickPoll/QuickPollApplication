@@ -1,4 +1,4 @@
-package skuniv.ac.kr.quickpollapplication.UI;
+package skuniv.ac.kr.quickpollapplication;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -76,7 +76,7 @@ public abstract class SafeAsyncTask<ResultT> implements Callable<ResultT> {
         return future;
     }
 
-    public SafeAsyncTask<ResultT> executor( Executor executor ) {
+    public SafeAsyncTask<ResultT> executor(Executor executor ) {
         this.executor = executor;
         return this;
     }
@@ -85,7 +85,7 @@ public abstract class SafeAsyncTask<ResultT> implements Callable<ResultT> {
         return executor;
     }
 
-    public SafeAsyncTask<ResultT> handler( Handler handler ) {
+    public SafeAsyncTask<ResultT> handler(Handler handler ) {
         this.handler = handler;
         return this;
     }
@@ -317,7 +317,7 @@ public abstract class SafeAsyncTask<ResultT> implements Callable<ResultT> {
 
     private OnExceptionListener onExceptionListener = null;
     
-    public SafeAsyncTask<ResultT> setOnExceptionListener( OnExceptionListener onExceptionListener ) {
+    public SafeAsyncTask<ResultT> setOnExceptionListener(OnExceptionListener onExceptionListener ) {
     	this.onExceptionListener = onExceptionListener;
     	return this;
     }

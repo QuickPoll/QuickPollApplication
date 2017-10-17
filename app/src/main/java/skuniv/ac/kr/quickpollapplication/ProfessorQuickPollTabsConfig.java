@@ -1,18 +1,17 @@
-package skuniv.ac.kr.quickpollapplication.UI;
+package skuniv.ac.kr.quickpollapplication;
 
 import android.os.Bundle;
-
-import skuniv.ac.kr.quickpollapplication.R;
 
 
 /**
  * Created by gunyoungkim on 2017-09-07.
  */
 
-public class QuickPollTabsConfig {
-    public static QuickPollTabsConfig.TabInfo[] TABINFOS = {
-            new QuickPollTabsConfig.TabInfo( "사용자", R.drawable.questionimage, R.drawable.questionimage, QuizListFragment.class, null),
-            new QuickPollTabsConfig.TabInfo( "알람1", R.drawable.ranking_image, R.drawable.ranking_image, RankListFragment.class, null),
+public class ProfessorQuickPollTabsConfig {
+    public static ProfessorQuickPollTabsConfig.TabInfo[] TABINFOS = {
+            new ProfessorQuickPollTabsConfig.TabInfo( "사용자", R.drawable.no_selected_question_image, R.drawable.questionimage, QuizListFragment.class, null),
+            new ProfessorQuickPollTabsConfig.TabInfo( "알람1", R.drawable.ranking_image, R.drawable.select_ranking_image, ProfessorRankingListFragment.class, null),
+            new ProfessorQuickPollTabsConfig.TabInfo( "알람1", R.drawable.question_check, R.drawable.question_uncheck, ProfessorSubmitQuickPollListFragment.class, null)
     };
 
     public static final class TABINDEX {
@@ -29,7 +28,7 @@ public class QuickPollTabsConfig {
         return TABINFOS.length;
     }
 
-    public static final QuickPollTabsConfig.TabInfo TABINFO(int index ) {
+    public static final TabInfo TABINFO(int index ) {
         return ( index < 0 || index >= COUNT_TABS() )  ? null : TABINFOS[ index ];
     }
 

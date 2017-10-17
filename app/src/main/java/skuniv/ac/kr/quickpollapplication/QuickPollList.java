@@ -1,11 +1,9 @@
-package skuniv.ac.kr.quickpollapplication.UI;
+package skuniv.ac.kr.quickpollapplication;
 
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TabHost;
-
-import skuniv.ac.kr.quickpollapplication.R;
 
 public class QuickPollList extends AppCompatActivity {
     private QuickPollTabsAdapter quickPollTabsAdapter;

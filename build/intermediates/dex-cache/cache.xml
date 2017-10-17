@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Juhyun\Desktop\Project\QuickPollApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Juhyun\Desktop\Project\QuickPollApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7238585b0932f0fc44c7228f094dca451280bfee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Juhyun\Desktop\Project\QuickPollApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="09fa42952dff9cee5bf239d49370b31bd71e4da5">
+        <dex dex="C:\Users\Juhyun\Desktop\Project\QuickPollApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_dfbda6c09d26ba13c4cba45f64c8da2938df7873\classes.dex" />
+    </item>
+
+</items>

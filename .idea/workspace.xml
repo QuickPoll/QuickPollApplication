@@ -22,6 +22,9 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+    <list default="true" id="6c43d753-ec86-4ead-92aa-3fe5d93935f5" name="Default" comment="" />
+=======
+<<<<<<< HEAD
     <list default="true" id="9bda3e2a-cfe4-4f9a-83df-a86ed7e6be1c" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/blue.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bluesquare.png" />
@@ -134,6 +137,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tab_background.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tab_background.xml" />
 >>>>>>> 8d4d5285b23e258dd938276762dd09f1520b4f96
     </list>
+>>>>>>> 478b67281df495eed908c6e82dd1812125a6ca42
     <ignored path="QuickPollApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -3050,12 +3054,18 @@
   <component name="ToolWindowManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="false" />
 =======
 <<<<<<< HEAD
     <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
 =======
+>>>>>>> 6abb5b0a422a7c4a2c9ac803eb73d7d952804a06
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
 >>>>>>> 478b67281df495eed908c6e82dd1812125a6ca42
     <editor active="true" />
@@ -3117,6 +3127,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
 =======
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+>>>>>>> 478b67281df495eed908c6e82dd1812125a6ca42
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

@@ -7,45 +7,46 @@
         android:layout_height ="160dp"
         android:layout_width="150dp"
         android:src="@drawable/logo"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="85dp"
+        android:id="@+id/imageView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="93dp"
-        android:id="@+id/imageView" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/editText_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="57dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="90dp"
+        android:paddingLeft="200px"
+        android:textColor="#FFFFFF"
         android:ems="10"
-        android:inputType="textPersonName"
         android:text=""
-        android:hint="id:"
+        android:background="@drawable/login_id"
         android:layout_below="@+id/imageView"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignStart="@+id/editText_password" />
 
     <EditText
         android:id="@+id/editText_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText_id"
-        android:layout_below="@+id/editText_id"
-        android:layout_marginTop="24dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="200px"
+        android:textColor="#FFFFFF"
         android:ems="10"
-        android:inputType="textPersonName"
         android:text=""
-        android:hint="password"/>
+        android:background="@drawable/login_pw"
+        android:layout_below="@+id/editText_id"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:text=""
+        android:background="@drawable/login_enter"
         android:layout_below="@+id/editText_password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

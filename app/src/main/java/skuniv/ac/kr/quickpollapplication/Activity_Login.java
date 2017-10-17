@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import skuniv.ac.kr.quickpollapplication.UI.QuickPollList;
+
 /**
  * Created by Juhyun on 2017-10-17.
  */
@@ -37,7 +39,7 @@ public class Activity_Login extends AppCompatActivity {
                 input_id = id_edit.getText().toString();
                 input_password = password_edit.getText().toString();
                 if(input_id!=null && input_password != null) {
-                    Intent intent = new Intent(Activity_Login.this, Activity_PageAfterLogin.class);
+                    Intent intent = new Intent(Activity_Login.this, QuickPollList.class);
                     intent.putExtra("id", input_id);
                     intent.putExtra("password", input_password);
                     Log.d("check", input_id+", " + input_password + "!!!");

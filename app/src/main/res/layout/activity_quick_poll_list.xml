@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="skuniv.ac.kr.quickpollapplication.QuickPollList">
+    tools:context="skuniv.ac.kr.quickpollapplication.UI.QuickPollList">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:text="초고속 통신망"
             android:layout_marginTop="40dp"
             android:layout_marginStart="20dp"
-            android:textSize="30dp"
+            android:textSize="25dp"
             />
 
         <TextView
@@ -28,6 +28,18 @@
             android:text="화 21,22교시"
             android:layout_alignStart="@+id/Subject_Name"
             android:layout_below="@+id/Subject_Name"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="3학점"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/Subject_Name"
+            android:layout_alignBottom="@+id/Subject_Name"
+            android:background="@drawable/score"
             />
     </RelativeLayout>
 

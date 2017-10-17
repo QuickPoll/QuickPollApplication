@@ -1,5 +1,6 @@
 package skuniv.ac.kr.quickpollapplication.UI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import skuniv.ac.kr.quickpollapplication.Activity_Login;
+import skuniv.ac.kr.quickpollapplication.ProfessorQuickPollList;
 import skuniv.ac.kr.quickpollapplication.R;
 
 /**
@@ -36,7 +39,10 @@ public class CourseListForProfessor extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
             // 이벤트 발생 시 해당 아이템 위치의 텍스트를 출력
-            Toast.makeText(CourseListForProfessor.this, courseAdapter.getItem(arg2).getCourseName(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(CourseListForProfessor.this, ProfessorQuickPollList.class);
+            startActivity(intent);
+            finish();
+//            Toast.makeText(CourseListForProfessor.this, courseAdapter.getItem(arg2).getCourseName(), Toast.LENGTH_SHORT).show();
         }
     };
     private void dataSetting(){

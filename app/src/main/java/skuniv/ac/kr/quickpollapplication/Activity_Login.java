@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import skuniv.ac.kr.quickpollapplication.UI.CourseListForProfessor;
+
 /**
  * Created by Juhyun on 2017-10-17.
  */
@@ -35,11 +37,12 @@ public class Activity_Login extends AppCompatActivity {
                 input_id = id_edit.getText().toString();
                 input_password = password_edit.getText().toString();
                 if(input_id!=null && input_password != null) {
-                    Intent intent = new Intent(Activity_Login.this, ProfessorQuickPollList.class);
+                    Intent intent = new Intent(Activity_Login.this, CourseListForProfessor.class);
                     intent.putExtra("id", input_id);
                     intent.putExtra("password", input_password);
                     Log.d("check", input_id+", " + input_password + "!!!");
                     startActivity(intent);
+                    finish();
                 }
             }
         });

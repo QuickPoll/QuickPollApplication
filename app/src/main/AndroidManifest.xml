@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuickPollList" />
-        <activity android:name=".Activity_PageAfterLogin" />
-        <activity android:name=".ProfessorQuickPollList"></activity>
+        <activity android:name=".ProfessorQuickPollList"/>
+        <activity android:name=".UI.CourseListForProfessor"/>
+        <activity android:name="QuickPollList"/>
+        <activity android:name=".Activity_PageAfterLogin">
+        </activity>
     </application>
 
 </manifest>

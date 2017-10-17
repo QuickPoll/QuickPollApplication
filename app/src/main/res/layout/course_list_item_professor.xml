@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/courseName"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"
+                android:text="초고속 통신망"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/date"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:text="화21,22교시 " />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/credit"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/credit"
+            android:layout_weight="0.20" />
+
+        <ImageView
+            android:id="@+id/clickBtn"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/enterbox" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
